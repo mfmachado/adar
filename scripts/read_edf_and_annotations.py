@@ -98,7 +98,7 @@ if __name__ == '__main__':
           f'to {fs_new} Hz')
     df_data = merge_data_file_and_annotations(data_polysomnography, df_annotations_polysomnography, map_name_sleep_id,
                                               fs_new)
-    df_data.to_csv(new_filename)
+    df_data.to_csv(new_filename, index=False)
 
     print(f'Created CSV File: {new_filename}')
     df_data.head(4)
