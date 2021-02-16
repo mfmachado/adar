@@ -63,7 +63,7 @@ if __name__ == '__main__':
     # Subject ID
     subject_name = 'nfle1'
     # New frequency
-    fs_new = 64
+    fs_new = 128
     # CSV Filename
     new_filename = f'{subject_name}_data_and_annotations.csv'
 
