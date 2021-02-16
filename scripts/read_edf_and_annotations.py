@@ -61,9 +61,9 @@ if __name__ == '__main__':
     
     """
     # Subject ID
-    subject_name = 'n2'
+    subject_name = 'nfle1'
     # New frequency
-    fs_new = 128
+    fs_new = 64
     # CSV Filename
     new_filename = f'{subject_name}_data_and_annotations.csv'
 
@@ -73,7 +73,7 @@ if __name__ == '__main__':
     url_annotations = f'https://physionet.org/files/capslpdb/1.0.0/{subject_name}.txt?download'
 
     print(f'Downloading data file: {url_data}')
-    urllib.request.urlretrieve(url_data, data_filename)
+    #urllib.request.urlretrieve(url_data, data_filename)
 
     print(f'Downloading annotations data file: {url_annotations}')
     urllib.request.urlretrieve(url_annotations, filename_annotations)
